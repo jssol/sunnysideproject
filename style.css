@@ -57,21 +57,6 @@ body {
     line-height: 1.6;
 }
 
-@media (max-width: 375px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 375px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 1440px) {
-    /* Desktop version design */
-}
-
 section {
     padding: 5em 2em;
 }
@@ -133,13 +118,18 @@ h3 { font-size: var(--fs-h3); }
     justify-content: space-between;
 }
 
-.nav-toggle {
-    background: transparent;
-    border: none;
-}
-
 .nav {
     display: none;
+}
+
+.nav__list {
+    display: inherit;
+}
+
+.nav-toggle {
+    background: transparent;
+    display: block;
+    border: none;
 }
 
 /* Transform and Stand section */
@@ -358,4 +348,15 @@ h3 { font-size: var(--fs-h3); }
     text-decoration: none;
     color: inherit;
     font-weight: var(--fw-second-xbold);
+}
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 375px;
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
