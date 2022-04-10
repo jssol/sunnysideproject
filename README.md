@@ -41,7 +41,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Javascript (ES6);
+- Javascript (ES6)
 
 ### What I learned
 
